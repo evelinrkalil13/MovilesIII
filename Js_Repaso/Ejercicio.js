@@ -36,6 +36,7 @@ while(continuacion == "SI"){
     } else{
          continuacion = prompt("Desea continuar? (SI/NO)");
     }
+    
 }
   
 
