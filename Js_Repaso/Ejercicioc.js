@@ -12,6 +12,8 @@ let contFF = 0;
 let contfM = 0;
 let contSF = 0;
 let contSM = 0;
+let promF = 0;
+let promS = 0;
 
 nalumnos = parseInt(prompt("Ingrese el número de alumnos a evaluar"));
 let nalumnosc = nalumnos - 1;
@@ -40,7 +42,7 @@ let prom = (nota1c+nota2c+nota3c+nota4c+nota5c)/5;
 if(programa == "finanzas" || programa == "FINANZAS"){
 
     
-    let promF = (prom + prom)/nalumnos;
+    promF = (prom + prom)/nalumnos;
 
     if(sex == "f" || sex== "F"){
        
@@ -54,7 +56,7 @@ if(programa == "finanzas" || programa == "FINANZAS"){
 }
 else if(programa == "sistemas" || programa == "SISTEMAS"){
 
-    let promS = (prom + prom)/nalumnos;
+   promS = (prom + prom)/nalumnos;
 
     if(sex == "f" || sex== "F"){
        
