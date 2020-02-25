@@ -1,20 +1,20 @@
 
-var cont = 0;
-var programa = " ";
-var sex = " ";
-var nalumnos =  0;
-var nota1= 0;
-var nota2= 0;
-var nota3= 0;
-var nota4= 0;
-var nota5= 0;
-var contFF = 0;
-var contfM = 0;
-var contSF = 0;
-var contSM = 0;
+let cont = 0;
+let programa = " ";
+let sex = " ";
+let nalumnos =  0;
+let nota1= 0;
+let nota2= 0;
+let nota3= 0;
+let nota4= 0;
+let nota5= 0;
+let contFF = 0;
+let contfM = 0;
+let contSF = 0;
+let contSM = 0;
 
 nalumnos = parseInt(prompt("Ingrese el número de alumnos a evaluar"));
-var nalumnosc = nalumnos - 1;
+let nalumnosc = nalumnos - 1;
 while(cont <= nalumnosc){
 
     cont ++; 
@@ -29,18 +29,18 @@ while(cont <= nalumnosc){
     nota5 = prompt("Ingrese la nota 5");
 
     
-var nota1c = parseInt(nota1);
-var nota2c = parseInt(nota2);
-var nota3c = parseInt(nota3);
-var nota4c = parseInt(nota4);
-var nota5c = parseInt(nota5);
+let nota1c = parseInt(nota1);
+let nota2c = parseInt(nota2);
+let nota3c = parseInt(nota3);
+let nota4c = parseInt(nota4);
+let nota5c = parseInt(nota5);
 
-var prom = (nota1c+nota2c+nota3c+nota4c+nota5c)/5;
+let prom = (nota1c+nota2c+nota3c+nota4c+nota5c)/5;
 
 if(programa == "finanzas" || programa == "FINANZAS"){
 
     
-    var promF = (prom + prom)/nalumnos;
+    let promF = (prom + prom)/nalumnos;
 
     if(sex == "f" || sex== "F"){
        
@@ -54,7 +54,7 @@ if(programa == "finanzas" || programa == "FINANZAS"){
 }
 else if(programa == "sistemas" || programa == "SISTEMAS"){
 
-    var promS = (prom + prom)/nalumnos;
+    let promS = (prom + prom)/nalumnos;
 
     if(sex == "f" || sex== "F"){
        
