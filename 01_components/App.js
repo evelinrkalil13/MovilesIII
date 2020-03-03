@@ -1,78 +1,48 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, View, Image, Text, TextInput, SafeAreaView, Button, Alert } from 'react-native';
 
 export default function App() {
+  const saludo = () =>{Alert.alert("How you doing?")}
+  const [name, setName] = useState("");
   return (
     <View style={styles.container}>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
 
-   <View style={styles.containerrow}>
-   <View style={styles.box1}><Text style={styles.text}>Taylor Swift1</Text></View>
-   <View style={styles.box2}><Text style={styles.text}>Taylor Swift2</Text></View>
-   </View>
-
-   <View style={styles.containerrow}>
-   <View style={styles.box3}><Text style={styles.text}>Taylor Swift1</Text></View>
-   <View style={styles.box4}><Text style={styles.text}>Taylor Swift2</Text></View>
-   </View>
-
-     
-      
-        
-    </View>
+        <Image style={styles.logo} source={require('./assets/pride.png')}/>
+        <TextInput  maxLength={14} style={styles.textInput} placeholder="User" onChangeText={(text)=>setName(text)}></TextInput>
+        <Button title="Start" onPress={saludo}></Button>
+  </View> 
     
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+ 
+  container:{
     flex: 1,
-    backgroundColor: '#d50000',
-    flexDirection: "column", 
-
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-
-  containerrow: {
-    flex: 1,
-    backgroundColor: '#d50000',
-    flexDirection: "row", 
-
+  logo:{
+    width: 100,
+    height: 100,
   },
+  textInput:{
+    borderColor: '#000',
+    borderWidth: 1 ,
+    borderRadius: 5,
+    width: 230,
+    textAlign: 'center',
 
-  text:{
-    color: '#fff',
-    fontWeight: "bold",
-  },
-
-  box1:{
-    flex:1,
-    backgroundColor:'#d50000',
-  },
-
-  box2:{
-    flex:1,
-    backgroundColor:'#e65100',
-  },
-
-  box3:{
-    flex:1,
-    backgroundColor:'#ffea00',
-  },
-
-  box4:{
-    flex:1,
-    backgroundColor:'#087f23',
-  },
-
-  box5:{
-    flex:1,
-    backgroundColor:'#0d47a1',
-  },
-
-  box6:{
-    flex:1,
-    backgroundColor:'#4a148c',
-    justifyContent: 'space-between',
-  },
-
-
+  }
 });
